@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="python">
+  <snippet>
+    <tag>auto</tag>
+    <description>AutoField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.AutoField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>bigInt</tag>
+    <description>BigIntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.BigIntegerField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>boolean</tag>
+    <description>BooleanField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.BoolenField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>char</tag>
+    <description>CharField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.CharField(max_lenght=${2:None}, ${3:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>commaSepInt</tag>
+    <description>CommaSeperatedIntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.CommaSeperatedIntegerField(max_length=${2:NONE},${3:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>date</tag>
+    <description>DateField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.DateField(auto_now=${2:False}, auto_now_add=${3:False} ,${4:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>dateTime</tag>
+    <description>DateTimeField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.DateTimeField(auto_now=${2:False}, auto_now_add=${3:False} ,${4:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>decimal</tag>
+    <description>DecimalField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.DecimalField(max_digits=${2:None}, decimal_places=${3:None} ,${4:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>email</tag>
+    <description>EmailField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.EmailField(max_length=${2:75}, ${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>file</tag>
+    <description>FileField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.FileField(upload_to="${2:MEDIA_ROOT/PATH}", max_length=${3:100},${4:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>filePath</tag>
+    <description>FilePathField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.FilePathField(path="${2:LOCATIONPATH}", match="${3:REGEX}", recursive=${4:False}, max_length=${5:100}, ${6:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>float</tag>
+    <description>FloatField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.FloatField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>image</tag>
+    <description>ImageField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.ImageField(upload_to="${2:LOCATIONPATH}", height_fld=${3:NONE}, width_fld=${4:None}, max_length=${5:100}, ${6:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>integer</tag>
+    <description>IntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.IntegerField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>ipaddress</tag>
+    <description>IPAddressField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.IPAddressField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>nullBoolean</tag>
+    <description>NullBooleanField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.NullBooleanField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>positveInt</tag>
+    <description>PositiveIntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.PositiveIntegerField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>positiveSmallInt</tag>
+    <description>PositiveSmallIntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.PositiveSmallIntegerField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>slug</tag>
+    <description>SlugField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.SlugField(max_length=${2:50}, ${3:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>smallInt</tag>
+    <description>SmallIntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.SmallIntegerField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>text</tag>
+    <description>TextField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.TextField(${2:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>time</tag>
+    <description>TimeField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.TimeField(auto_now=${2:False}, auto_now_add=${3:False}, ${4:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>url</tag>
+    <description>URLField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.URLField(verify_exists=${2:True}, max_length=${3:200} ,${4:OPTIONS})]]></text>    
+  </snippet>
+  <snippet>
+    <tag>xml</tag>
+    <description>XMLField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.XMLField(schema_path="${2:FILESYSTEMPATH}", ${3:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fk</tag>
+    <description>ForeignKeyField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.ForeignField('${2:OTHERMODELNAME/self}', related_name='${3:NONE}', limit_choices_to= {'${4:FIELDNAME}'}, to_fld='${5:FIELDNAME}', on_delete=models.${6:CASCADE/PROTECT/SET_NULL/SET_DEFAULT/SET(FUNCTIONNAME)/DO_NOTHING}, ${7:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>m2mk</tag>
+    <description>ManyToManyField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.ManyToManyField('${2:OTHERMODELNAME/self}', related_name='${3:NONE}', limit_choices_to= {'${4:FIELDNAME}'}, through='${5:INTTABLENAME}', db_table="${6:TABLENAME}", ${7:OPTIONS})]]></text>
+  </snippet>
+  <snippet>
+    <tag>one2one</tag>
+    <description>OneToOneField</description>
+    <text><![CDATA[${1:FIELDNAME} = models.OneToOneField('${2:OTHERMODELNAME', parent_link=${3:False} ,${4:OPTIONS})]]></text>
+  </snippet> 
+</snippets>
