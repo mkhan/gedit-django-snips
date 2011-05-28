@@ -1,3 +1,5 @@
+# Django Snippets for gEdit 2
+
 ## DESCRIPTION
 This project is intended to provide you gedit snippets for Django, which shall help you speed up declaring fields, field options, meta options and models.
 
