@@ -1,6 +1,5 @@
 ## DESCRIPTION
-
-This project is intended to provide you gedit snippets for Django, which shall help you speed up declaring fields, field options, meta options and models.s
+This project is intended to provide you gedit snippets for Django, which shall help you speed up declaring fields, field options, meta options and models.
 
 ## REQUIREMENTS
 Make sure the following requirements are already installed.
