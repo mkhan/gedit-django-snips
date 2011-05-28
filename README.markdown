@@ -10,3 +10,5 @@ Make sure the following requirements are already installed.
 
 ## INSTALLATION
 Copy the *.xml files from the git repository to the following location ~/.gnome2/gedit/snippets/ and then reload your gedit editor. 
+
+
